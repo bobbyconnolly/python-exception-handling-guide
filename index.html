@@ -45,6 +45,13 @@
             padding: 10px;
             margin-top: 20px;
         }
+        .responsive-image {
+            max-width: 200px; /* or whatever maximum width you prefer */
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
         @media print {
             body {
                 max-width: none;
@@ -159,7 +166,7 @@ while True:
         <p>When testing your number guessing game, you don't always need that upper bound of 100. For quicker testing, try setting the range to something small, like 1 to 4. This allows you to test all code paths more quickly without spending too much time playing the game. Remember: save your time and make it easy to test! Efficient testing is key to developing robust software.</p>
     </div>
 
-    <img src="jumping-snake.webp" alt="Anaconda download page with 'Skip registration' link highlighted" style="margin-top: 200px;" />
+    <img class="responsive-image" src="jumping-snake.webp" alt="Anaconda download page with 'Skip registration' link highlighted" />
 
 </body>
 </html>
