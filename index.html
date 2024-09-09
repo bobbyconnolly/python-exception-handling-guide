@@ -11,6 +11,12 @@
             margin: 0 auto;
             max-width: 800px;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .content {
+            width: 100%;
         }
         h1, h2 {
             color: #333;
@@ -20,6 +26,8 @@
             border-left: 3px solid #4CAF50;
             padding: 10px;
             margin-bottom: 15px;
+            width: 100%;
+            box-sizing: border-box;
         }
         .note {
             background-color: #ffffcc;
@@ -39,7 +47,6 @@
         }
         @media print {
             body {
-              
                 max-width: none;
             }
             .page-break {
