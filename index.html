@@ -5,66 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Evolution of Our Number Guessing Game</title>
     <style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0 auto;
+        padding: 20px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .content {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    h1, h2 {
+        color: #333;
+        word-wrap: break-word;
+    }
+    .code-block {
+        background-color: #f4f4f4;
+        border-left: 3px solid #4CAF50;
+        padding: 10px;
+        margin-bottom: 15px;
+        width: 100%;
+        box-sizing: border-box;
+        overflow-x: auto;
+    }
+    .code-block pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        margin: 0;
+    }
+    .note {
+        background-color: #ffffcc;
+        border-left: 3px solid #ffeb3b;
+        padding: 10px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+    .comment {
+        color: #2196F3;
+        font-weight: bold;
+    }
+    .tip {
+        background-color: #e1f5fe;
+        border-left: 3px solid #03a9f4;
+        padding: 10px;
+        margin-top: 20px;
+        box-sizing: border-box;
+    }
+    .responsive-image {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+    }
+    @media screen and (max-width: 600px) {
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0 auto;
-            max-width: 800px;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .content {
-            width: 100%;
-        }
-        h1, h2 {
-            color: #333;
-        }
-        .code-block {
-            background-color: #f4f4f4;
-            border-left: 3px solid #4CAF50;
             padding: 10px;
-            margin-bottom: 15px;
-            width: 100%;
-            box-sizing: border-box;
         }
-        .note {
-            background-color: #ffffcc;
-            border-left: 3px solid #ffeb3b;
-            padding: 10px;
-            margin-bottom: 20px;
+        .code-block, .note, .tip {
+            padding: 5px;
         }
-        .comment {
-            color: #2196F3;
-            font-weight: bold;
+    }
+    @media print {
+        body {
+            max-width: none;
         }
-        .tip {
-            background-color: #e1f5fe;
-            border-left: 3px solid #03a9f4;
-            padding: 10px;
-            margin-top: 20px;
+        .page-break {
+            page-break-before: always;
         }
-        .responsive-image {
-            max-width: 200px; /* or whatever maximum width you prefer */
-            width: 100%;
-            height: auto;
-            display: block;
-            margin: 20px auto;
+        * {
+            -webkit-print-color-adjust: exact !important;
+            color-adjust: exact !important;
+            print-color-adjust: exact !important;
         }
-        @media print {
-            body {
-                max-width: none;
-            }
-            .page-break {
-                page-break-before: always;
-            }
-            * {
-                -webkit-print-color-adjust: exact !important;
-                color-adjust: exact !important;
-                print-color-adjust: exact !important;
-            }
-        }
+    }
     </style>
 </head>
 <body>
