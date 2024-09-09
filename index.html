@@ -5,82 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Evolution of Our Number Guessing Game</title>
     <style>
-    body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 0 auto;
-        padding: 20px;
-        max-width: 100%;
-        box-sizing: border-box;
-    }
-    .content {
-        width: 100%;
-        max-width: 800px;
-        margin: 0 auto;
-    }
-    h1, h2 {
-        color: #333;
-        word-wrap: break-word;
-    }
-    .code-block {
-        background-color: #f4f4f4;
-        border-left: 3px solid #4CAF50;
-        padding: 10px;
-        margin-bottom: 15px;
-        width: 100%;
-        box-sizing: border-box;
-        overflow-x: auto;
-    }
-    .code-block pre {
-        white-space: pre-wrap;
-        word-wrap: break-word;
-        margin: 0;
-    }
-    .note {
-        background-color: #ffffcc;
-        border-left: 3px solid #ffeb3b;
-        padding: 10px;
-        margin-bottom: 20px;
-        box-sizing: border-box;
-    }
-    .comment {
-        color: #2196F3;
-        font-weight: bold;
-    }
-    .tip {
-        background-color: #e1f5fe;
-        border-left: 3px solid #03a9f4;
-        padding: 10px;
-        margin-top: 20px;
-        box-sizing: border-box;
-    }
-    .responsive-image {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 20px auto;
-    }
-    @media screen and (max-width: 600px) {
         body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+        .content {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            color: #333;
+            word-wrap: break-word;
+        }
+        .code-block {
+            background-color: #f4f4f4;
+            border-left: 3px solid #4CAF50;
             padding: 10px;
+            margin-bottom: 15px;
+            width: 100%;
+            box-sizing: border-box;
+            overflow-x: auto;
         }
-        .code-block, .note, .tip {
-            padding: 5px;
+        .code-block pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            margin: 0;
         }
-    }
-    @media print {
-        body {
-            max-width: none;
+        .note {
+            background-color: #ffffcc;
+            border-left: 3px solid #ffeb3b;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
         }
-        .page-break {
-            page-break-before: always;
+        .comment {
+            color: #2196F3;
+            font-weight: bold;
         }
-        * {
-            -webkit-print-color-adjust: exact !important;
-            color-adjust: exact !important;
-            print-color-adjust: exact !important;
+        .tip {
+            background-color: #e1f5fe;
+            border-left: 3px solid #03a9f4;
+            padding: 10px;
+            margin-top: 20px;
+            box-sizing: border-box;
         }
-    }
+        .responsive-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+        @media screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .code-block, .note, .tip {
+                padding: 5px;
+            }
+        }
+        @media print {
+            body {
+                max-width: none;
+            }
+            .page-break {
+                page-break-before: always;
+            }
+            * {
+                -webkit-print-color-adjust: exact !important;
+                color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -182,7 +182,7 @@ while True:
         <p>When testing your number guessing game, you don't always need that upper bound of 100. For quicker testing, try setting the range to something small, like 1 to 4. This allows you to test all code paths more quickly without spending too much time playing the game. Remember: save your time and make it easy to test! Efficient testing is key to developing robust software.</p>
     </div>
 
-    <img class="responsive-image" src="jumping-snake.webp" alt="Anaconda download page with 'Skip registration' link highlighted" />
+    <img src="jumping-snake.webp" alt="Anaconda download page with 'Skip registration' link highlighted" class="responsive-image" />
 
 </body>
 </html>
